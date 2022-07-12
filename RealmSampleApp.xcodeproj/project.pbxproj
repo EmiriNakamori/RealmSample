@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A4F019A86A202904B06AE5E /* Pods_RealmSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B03663D8F2D6776DBE3304 /* Pods_RealmSampleApp.framework */; };
+		FD06F994287D036E005DEF97 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F993287D036E005DEF97 /* Medicine.swift */; };
+		FD06F996287D037D005DEF97 /* MedicineHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F995287D037D005DEF97 /* MedicineHistory.swift */; };
+		FD06F998287D03A4005DEF97 /* MedicineSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F997287D03A4005DEF97 /* MedicineSet.swift */; };
 		FD917526287C259D00F2843C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917525287C259D00F2843C /* AppDelegate.swift */; };
 		FD917528287C259D00F2843C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917527287C259D00F2843C /* SceneDelegate.swift */; };
 		FD91752A287C259D00F2843C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917529287C259D00F2843C /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		1AB46C3801CD5FEC5F7C9E88 /* Pods-RealmSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSampleApp.release.xcconfig"; path = "Target Support Files/Pods-RealmSampleApp/Pods-RealmSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		2BF8D0E3401866AC53EBB442 /* Pods-RealmSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-RealmSampleApp/Pods-RealmSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94B03663D8F2D6776DBE3304 /* Pods_RealmSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD06F993287D036E005DEF97 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		FD06F995287D037D005DEF97 /* MedicineHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistory.swift; sourceTree = "<group>"; };
+		FD06F997287D03A4005DEF97 /* MedicineSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineSet.swift; sourceTree = "<group>"; };
 		FD917522287C259D00F2843C /* RealmSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD917525287C259D00F2843C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD917527287C259D00F2843C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				2BF8D0E3401866AC53EBB442 /* Pods-RealmSampleApp.debug.xcconfig */,
 				1AB46C3801CD5FEC5F7C9E88 /* Pods-RealmSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +93,9 @@
 				FD91752E287C259E00F2843C /* Assets.xcassets */,
 				FD917530287C259E00F2843C /* LaunchScreen.storyboard */,
 				FD917533287C259E00F2843C /* Info.plist */,
+				FD06F993287D036E005DEF97 /* Medicine.swift */,
+				FD06F995287D037D005DEF97 /* MedicineHistory.swift */,
+				FD06F997287D03A4005DEF97 /* MedicineSet.swift */,
 			);
 			path = RealmSampleApp;
 			sourceTree = "<group>";
@@ -207,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD06F998287D03A4005DEF97 /* MedicineSet.swift in Sources */,
 				FD91752A287C259D00F2843C /* ViewController.swift in Sources */,
 				FD917526287C259D00F2843C /* AppDelegate.swift in Sources */,
+				FD06F996287D037D005DEF97 /* MedicineHistory.swift in Sources */,
 				FD917528287C259D00F2843C /* SceneDelegate.swift in Sources */,
+				FD06F994287D036E005DEF97 /* Medicine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
