@@ -11,9 +11,9 @@
 		FD06F994287D036E005DEF97 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F993287D036E005DEF97 /* Medicine.swift */; };
 		FD06F996287D037D005DEF97 /* MedicineHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F995287D037D005DEF97 /* MedicineHistory.swift */; };
 		FD06F998287D03A4005DEF97 /* MedicineSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06F997287D03A4005DEF97 /* MedicineSet.swift */; };
+		FD25B80C288040A800C61267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25B80A288040A800C61267 /* ViewController.swift */; };
 		FD917526287C259D00F2843C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917525287C259D00F2843C /* AppDelegate.swift */; };
 		FD917528287C259D00F2843C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917527287C259D00F2843C /* SceneDelegate.swift */; };
-		FD91752A287C259D00F2843C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD917529287C259D00F2843C /* ViewController.swift */; };
 		FD91752D287C259D00F2843C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD91752B287C259D00F2843C /* Main.storyboard */; };
 		FD91752F287C259E00F2843C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD91752E287C259E00F2843C /* Assets.xcassets */; };
 		FD917532287C259E00F2843C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD917530287C259E00F2843C /* LaunchScreen.storyboard */; };
@@ -26,10 +26,10 @@
 		FD06F993287D036E005DEF97 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		FD06F995287D037D005DEF97 /* MedicineHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistory.swift; sourceTree = "<group>"; };
 		FD06F997287D03A4005DEF97 /* MedicineSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineSet.swift; sourceTree = "<group>"; };
+		FD25B80A288040A800C61267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD917522287C259D00F2843C /* RealmSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD917525287C259D00F2843C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD917527287C259D00F2843C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD917529287C259D00F2843C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD91752C287C259D00F2843C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD91752E287C259E00F2843C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD917531287C259E00F2843C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 			children = (
 				FD917525287C259D00F2843C /* AppDelegate.swift */,
 				FD917527287C259D00F2843C /* SceneDelegate.swift */,
-				FD917529287C259D00F2843C /* ViewController.swift */,
 				FD91752B287C259D00F2843C /* Main.storyboard */,
 				FD91752E287C259E00F2843C /* Assets.xcassets */,
 				FD917530287C259E00F2843C /* LaunchScreen.storyboard */,
@@ -96,6 +95,7 @@
 				FD06F993287D036E005DEF97 /* Medicine.swift */,
 				FD06F995287D037D005DEF97 /* MedicineHistory.swift */,
 				FD06F997287D03A4005DEF97 /* MedicineSet.swift */,
+				FD25B80A288040A800C61267 /* ViewController.swift */,
 			);
 			path = RealmSampleApp;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD25B80C288040A800C61267 /* ViewController.swift in Sources */,
 				FD06F998287D03A4005DEF97 /* MedicineSet.swift in Sources */,
-				FD91752A287C259D00F2843C /* ViewController.swift in Sources */,
 				FD917526287C259D00F2843C /* AppDelegate.swift in Sources */,
 				FD06F996287D037D005DEF97 /* MedicineHistory.swift in Sources */,
 				FD917528287C259D00F2843C /* SceneDelegate.swift in Sources */,
