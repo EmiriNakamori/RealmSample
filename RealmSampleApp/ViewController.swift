@@ -8,13 +8,12 @@
 import UIKit
 import RealmSwift
 
-
-
 class ViewController: UIViewController {
 
-
-
     let medicineSet = MedicineSet()
+
+
+    let realm = try! Realm()
 
     @IBOutlet weak var medicineA: UIButton!
     @IBOutlet weak var medicineB: UIButton!
@@ -28,39 +27,22 @@ class ViewController: UIViewController {
 
     }
 
-
-    func saveMedicineSet() {
-
-
-
-    }
-
     @IBAction func tapMedicineA(_ sender: Any) {
-
-
-
-
-        let realm = try! Realm()
 
         try! realm.write {
             let medicine = Medicine()
+
             medicine.id = 1
             medicine.name = "頭痛薬A"
             medicine.nameHira = "ずつうやくA"
             medicine.makerName = "大塚製薬"
             medicine.makerNameHira = "オオツカセイヤク"
             medicine.isPresctiption = false
-            realm.add(medicine, update: .modified)
-            let result = realm.objects(Medicine.self)
-            print(result)
-//
+            realm.add(medicine)
 
             medicineSet.medicines.append(medicine)
-//            let someMedicines = realm.objects(Medicine.self).filter("id = 1")
-//            medicineSet.medicines.append(objectsIn: someMedicines)
-            realm.add(medicineSet, update: .modified)
-            let results = realm.objects(MedicineSet.self)
-            print(results)
+
+            realm.add(medicineSet)
 
         }
 
@@ -68,28 +50,22 @@ class ViewController: UIViewController {
 
     @IBAction func tapMedicineB(_ sender: Any) {
 
-        let medicine = Medicine()
-        medicine.id = 2
-        medicine.name = "頭痛薬B"
-        medicine.nameHira = "ずつうやくB"
-        medicine.makerName = "製薬B"
-        medicine.makerNameHira = "セイヤクB"
-        medicine.isPresctiption = false
 
 
-        let realm = try! Realm()
+
         try! realm.write {
-        realm.add(medicine, update: .modified)
-        let result = realm.objects(Medicine.self)
-        print(result)
+            let medicine = Medicine()
+            medicine.id = 2
+            medicine.name = "頭痛薬B"
+            medicine.nameHira = "ずつうやくB"
+            medicine.makerName = "製薬B"
+            medicine.makerNameHira = "セイヤクB"
+            medicine.isPresctiption = false
 
+            realm.add(medicine)
 
-        medicineSet.medicines.append(medicine)
-//            let someMedicines = realm.objects(Medicine.self).filter("id = 1")
-//            medicineSet.medicines.append(objectsIn: someMedicines)
-        realm.add(medicineSet, update: .modified)
-        let results = realm.objects(MedicineSet.self)
-        print(results)
+            medicineSet.medicines.append(medicine)
+
         }
 
     }
@@ -97,11 +73,31 @@ class ViewController: UIViewController {
 
     @IBAction func tapStar(_ sender: Any) {
 
-//        medicineSet.name = setNameTextField.text ?? ""
-//
-//
-//        print(medicineSet)
     }
+
+    @IBAction func tapDelete(_ sender: Any) {
+        try! realm.write {
+//        let searchDeleteMedicineA = realm.objects(Medicine.self).filter("id = 1")
+
+//            realm.delete(medicineSet.medicines[0])
+            guard let index =         medicineSet.medicines.firstIndex (where: { medicine in
+                medicine.id == 1
+            }) else {
+                return
+            }
+            medicineSet.medicines.remove(at: index)
+        }
+
+    }
+
+
+    @IBAction func tapConfirm(_ sender: Any) {
+        let resultMedicine = realm.objects(Medicine.self)
+        print(resultMedicine)
+        let resultMedicineSet = realm.objects(MedicineSet.self)
+        print(resultMedicineSet)
+    }
+
 
 }
 

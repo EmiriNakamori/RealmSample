@@ -17,8 +17,8 @@ class Medicine: Object {
     dynamic var isPresctiption = false
     let medicineSets = LinkingObjects(fromType: MedicineSet.self, property: "medicines")
 
-    override static func primaryKey() -> String? {
-        return "id"
-    }
+//    override static func primaryKey() -> String? {
+//        return "id"
+//    }
 }
 

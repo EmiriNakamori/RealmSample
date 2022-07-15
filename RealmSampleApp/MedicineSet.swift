@@ -13,10 +13,6 @@ class MedicineSet: Object {
     dynamic var name = ""
 //    dynamic var createdAt: Date = Date()
     dynamic var isFavorite: Bool = false
-//    dynamic var medicine: Medicine?
     var medicines = List<Medicine>()
 
-    override static func primaryKey() -> String? {
-        return "id"
-    }
 }

@@ -7,9 +7,10 @@
 
 import RealmSwift
 
+@objcMembers
 class MedicineHistory: Object {
-    @objc dynamic var id = ""
-    @objc dynamic var name = ""
-    @objc dynamic var updatedAt: Date?
-    @objc dynamic var medicine: Medicine?
+    dynamic var id = ""
+    dynamic var name = ""
+    dynamic var updatedAt: Date?
+    var medicines = List<Medicine>()
 }
